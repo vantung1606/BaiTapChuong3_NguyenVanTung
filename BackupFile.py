@@ -55,7 +55,7 @@ def backup_database():
         print(f"[{datetime.now()}] Sao lưu thất bại: {e}")
 
 # Đặt lịch sao lưu
-schedule.every().day.at("20:32").do(backup_database)
+schedule.every().day.at("00:00").do(backup_database)
 
 print("Đang chạy chương trình sao lưu tự động...")
 
